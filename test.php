@@ -1,15 +1,9 @@
 <?php
-//
-// test if gettext extension is installed with php
-//
+$language = "en_US";
+putenv("LC_ALL=$language");
+setlocale(LC_ALL, $language);
+bindtextdomain("principal", "./translate");
+textdomain("principal");
 
-if (!function_exists("gettext"))
-{
-    echo "gettext is not installed\n";
-}
-else
-{
-    echo "gettext is supported\n";
-}
-
+print "<p>" . _("Simple test") . "</p>\n";
 ?>
