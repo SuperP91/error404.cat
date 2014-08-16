@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
 $language = "es_ES";
 putenv("LC_ALL=$language");
 setlocale(LC_ALL, $language);
