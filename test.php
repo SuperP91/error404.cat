@@ -5,5 +5,5 @@ setlocale(LC_ALL, $language);
 bindtextdomain("principal", "locale");
 textdomain("principal");
 
-print "<p>" . gettext("Simple test") . "</p>\n";
+print "<p>" . _("Simple test") . "</p>\n";
 ?>
