@@ -54,6 +54,31 @@
 <script>
 	document.getElementById("userAgent").innerHTML=navigator.userAgent;
 </script>
+<h2 id="m1"></h2>
+<h1 id="m2"></h1>
+<p><span id="m3"></span> <span id="m4"></span></p>
+<p id="m5"></p>
+
+<script>
+	setTimeout(function(){
+		document.getElementById("m1").innerHTML="Oh, wait...";
+	},3000);
+	setTimeout(function(){
+		document.getElementById("m2").innerHTML="WAIT!!!!";
+	},4000);
+	setTimeout(function(){
+		document.getElementById("m3").innerHTML="We found the page!";
+	},6000);
+	setTimeout(function(){
+		document.getElementById("m4").innerHTML="Yaaaaaaaaay!";
+	},7000);
+	setTimeout(function(){
+		document.getElementById("m5").innerHTML="Redirecting...";
+	},8500);
+	setTimeout(function(){
+		window.location.href="index_real.html"
+	},10000);
+</script>
 </p>
 </body>
 </html>
